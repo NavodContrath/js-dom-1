@@ -12,11 +12,24 @@ const buttonEl = document.querySelector("button")
 const imgOffEl = document.getElementById("imgOff")
 const imgOnEl = document.getElementById("imgOn")
 console.log(buttonEl, imgOffEl, imgOnEl);
+let isOff = 0
 
 buttonEl.addEventListener('click',
     function () {
-        imgOffEl.classList.add("none")
-        imgOnEl.classList.remove("none")
-
+        if (isOff === 0) {
+            imgOffEl.classList.add("none")
+            imgOnEl.classList.remove("none")
+            buttonEl.innerText = "OFF"
+            isOff = 1
+            return isOff
+        } else {
+            imgOffEl.classList.remove("none")
+            imgOnEl.classList.add("none")
+            buttonEl.innerText = "ON"
+        }
     }
 )
+
+
+
+
