@@ -14,19 +14,12 @@
             box-sizing: border-box;
         }
 
-        .card {
-            position: relative;
+        .none {
+            display: none;
         }
 
-        .overlay {
-            position: absolute;
-            display: none;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
+        .block {
+            display: block;
         }
     </style>
 </head>
@@ -39,24 +32,25 @@
                         class="visually-hidden">(current)</span></a>
             </div>
         </nav>
-        <main>
-            <div class="container m-auto">
-                <div class="row my-5">
-                    <div class="col-5 m-auto">
-                        <div class="card">
-                            <img class="m-auto" src="/img/white_lamp.png" alt="Title" width=" 100%">
-                            <img src="img/yellow_lamp.png" alt="" class="m-auto overlay" width="100%">
-                        </div>
-                        <button class="col-12 p-2">ON</button>
-
-
-
+    </header>
+    <main>
+        <div class="container m-auto">
+            <div class="row my-5">
+                <div class="col-5 m-auto">
+                    <div class="card">
+                        <img class="m-auto" src="./img/white_lamp.png" alt="Title" width=" 100%" id="imgOff">
+                        <img src="./img/yellow_lamp.png" alt="" class="m-auto none" width="100%" id="imgOn">
                     </div>
+                    <button class="col-12 p-2">ON</button>
+
+
+
                 </div>
             </div>
-        </main>
+        </div>
+    </main>
 
-    </header>
+
 
 
 
