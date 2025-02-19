@@ -26,6 +26,8 @@ buttonEl.addEventListener('click',
             imgOffEl.classList.remove("none")
             imgOnEl.classList.add("none")
             buttonEl.innerText = "ON"
+            isOff = 0
+            return isOff
         }
     }
 )
