@@ -32,6 +32,20 @@ buttonEl.addEventListener('click',
     }
 )
 
+//solution in class
+
+/* buttonEl.addEventListener('click',
+    function () {
+        if (imgOffEl.src.includes('white')) {
+            imgOffEl.src = './img/yellow_lamp.png'
+            buttonEl.innerText = "OFF"
+        } else {
+            imgOffEl.src = './img/white_lamp.png'
+            buttonEl.innerText = "ON"
+        }
+    }
+)
+ */
 
 
 
